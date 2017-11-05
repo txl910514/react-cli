@@ -46,7 +46,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|vue)$/,
+        test: /\.(js|jsx)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
         include: [resolve('src')],
@@ -55,16 +55,7 @@ module.exports = {
         }
       },
       {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: utils.cssLoaders({
-            extract: process.env.extract !== 'false'
-          })
-        }
-      },
-      {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader'
       },
