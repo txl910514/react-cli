@@ -29,14 +29,14 @@ if (process.env.NODE_ENV !== 'dev') {
 }
 module.exports = {
   entry: {
-    app: ['babel-polyfill', './src/main.js']
+    app: ['babel-polyfill', './src/Main.jsx']
   },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.jsx', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@/config/service_dev.js': resolve_base(),
