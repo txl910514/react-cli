@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-// import Hello from './page/Hello'
+import RouterMap from '@/router/router'
 
 ReactDOM.render(
-  <div>哈哈哈哈</div>,
-  document.getElementById('app')
+  <RouterMap />,
+  document.getElementById('root')
 )

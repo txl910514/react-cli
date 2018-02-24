@@ -1,0 +1,7 @@
+{
+  "entry": "./src/Main.jsx",
+  "extraBabelPlugins": [
+    "transform-runtime",
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true }]
+  ]
+}
