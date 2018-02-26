@@ -29,7 +29,7 @@ if (process.env.NODE_ENV !== 'dev') {
 }
 module.exports = {
   entry: {
-    app: ['babel-polyfill', './src/Main.jsx']
+    app: ['babel-polyfill', resolve('src/Main.jsx')]
   },
   output: {
     path: config.build.assetsRoot,

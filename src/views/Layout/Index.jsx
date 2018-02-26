@@ -1,4 +1,5 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 import {Layout, Menu} from 'antd'
 
 const { Header } = Layout
@@ -25,4 +26,4 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default withRouter(App)

@@ -81,5 +81,6 @@ exports.styleLoaders = function (options) {
       use: loader
     })
   }
+  console.log(output)
   return output
 }

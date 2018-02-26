@@ -17,8 +17,6 @@ module.exports = {
   // required to lint *.vue files
   plugins: [
     'html',
-    'standard',
-    'promise',
     'react'
   ],
   // add your custom rules here
@@ -29,6 +27,9 @@ module.exports = {
     'generator-star-spacing': 0,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    // 'react/jsx-uses-react': 'error',
+    // 'react/jsx-uses-vars': 'error',
+    // 'react/jsx-indent': [0, 2],
     'jsx-quotes': [2, 'prefer-double'],
     'react/jsx-indent-props': [0, 2]
   }
