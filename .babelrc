@@ -11,7 +11,7 @@
     "syntax-dynamic-import",
     ["import", {
       "libraryName": "antd",
-      "style": "css"
+      "style": true
     }]
   ],
   "comments": false
